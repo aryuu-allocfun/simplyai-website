@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects
+# Root (/) now serves the AI-search-visibility agency.
+# The AI Copilot consultancy moved to /bossai/ — friendly aliases 301 to it.
+/consultancy    /bossai/    301
+/copilot        /bossai/    301
+/boss-ai        /bossai/    301
+/bossai         /bossai/    301
