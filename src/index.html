@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SimplyAI.work - Drive your business with AI Copilot. Intelligent automation for modern business operations.">
-    <meta name="keywords" content="AI, business automation, AI copilot, workflow automation, Hong Kong, 老闆AI副手">
-    <title>SimplyAI.work | AI-Powered Business Copilot</title>
-    
+    <title>SimplyAI.work | AI Search Visibility for Professional Practices</title>
+    <meta name="description" content="SimplyAI helps aesthetic clinics, law firms, and consultancies in Hong Kong and Asia-Pacific become the practice AI recommends — and corrects what ChatGPT, Claude, Gemini, and Perplexity get wrong about them. Compliance-first, bilingual, evidence-based.">
+    <meta name="keywords" content="AI search visibility, generative engine optimization, GEO, LLMO, AI SEO, ChatGPT visibility, aesthetic clinic, law firm, professional services, Hong Kong, 醫美診所, 律師行, AI搜尋">
+    <link rel="canonical" href="https://simplyai.work/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://simplyai.work/">
+    <meta property="og:title" content="SimplyAI.work | AI Search Visibility for Professional Practices">
+    <meta property="og:description" content="Be the practice AI recommends — and correct what it gets wrong. Compliance-first AI search visibility for aesthetic clinics, law firms, and consultancies. Hong Kong & APAC.">
+
     <!-- Google Analytics (placeholder - replace G-XXXXXXXXXX with your actual ID) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
@@ -15,2695 +22,487 @@
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXXXXX');
     </script>
-    
-    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Phosphor Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&family=DM+Sans:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://simplyai.work/#organization",
+      "name": "SimplyAI.work",
+      "url": "https://simplyai.work/",
+      "description": "AI search visibility specialist for aesthetic clinics, law firms, and consultancies in Hong Kong and Asia-Pacific. We audit what AI assistants tell prospective clients about your practice, correct the errors, and make you the answer AI recommends.",
+      "slogan": "Be the brand AI cites.",
+      "areaServed": ["Hong Kong", "Asia-Pacific"],
+      "knowsLanguage": ["en", "zh-HK"],
+      "email": "hello@simplyai.work",
+      "serviceType": ["Generative Engine Optimization", "AI Search Visibility", "LLM Optimization"],
+      "audience": { "@type": "Audience", "audienceType": "High-trust professional practices — aesthetic clinics, law firms, and consultancies" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Search Visibility Services",
+        "itemListElement": [
+          { "@type": "Offer", "name": "AI Visibility & Hallucination Audit", "priceCurrency": "HKD", "price": "8800" },
+          { "@type": "Offer", "name": "Growth Retainer", "priceCurrency": "HKD", "price": "15800" },
+          { "@type": "Offer", "name": "Pro Retainer", "description": "Chains and multi-partner coverage; priced by consultation." }
+        ]
+      }
+    }
+    </script>
+
     <style>
-        /* ===== CSS VARIABLES / DESIGN TOKENS ===== */
         :root {
-            /* Colors - Clinical Luxury Palette */
-            --color-primary: #FAF8F5;
-            --color-accent: #C9A96E;
-            --color-accent-hover: #B8954D;
-            --color-neutral: #4A4A4A;
-            --color-dark: #1C1C1C;
-            --color-white: #FFFFFF;
-            --color-light-gray: #F5F2EF;
-            --color-border: #E8E4DF;
-            --color-success: #4CAF50;
-            --color-error: #E53935;
-            
-            /* Typography */
-            --font-display: 'DM Sans', 'Noto Serif TC', serif;
-            --font-heading: 'DM Sans', 'Noto Sans TC', sans-serif;
-            --font-body: 'Inter', 'Noto Sans TC', sans-serif;
-            
-            /* Spacing */
-            --space-xs: 8px;
-            --space-sm: 16px;
-            --space-md: 24px;
-            --space-lg: 48px;
-            --space-xl: 80px;
-            --space-2xl: 120px;
-            
-            /* Layout */
-            --max-width: 1280px;
-            --nav-height: 80px;
-            --border-radius: 12px;
-            --border-radius-sm: 8px;
-            --border-radius-lg: 24px;
-            
-            /* Shadows */
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
-            --shadow-md: 0 4px 24px rgba(0,0,0,0.08);
-            --shadow-lg: 0 8px 48px rgba(0,0,0,0.12);
-            
-            /* Transitions */
-            --transition-fast: 0.2s ease;
-            --transition-normal: 0.3s ease;
-            --transition-slow: 0.5s ease;
-        }
-        
-        /* ===== RESET & BASE ===== */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-        
-        body {
-            font-family: var(--font-body);
-            font-size: 16px;
-            line-height: 1.7;
-            color: var(--color-dark);
-            background-color: var(--color-white);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        a {
-            color: inherit;
-            text-decoration: none;
-            transition: color var(--transition-fast);
-        }
-        
-        button {
-            font-family: inherit;
-            cursor: pointer;
-            border: none;
-            background: none;
-        }
-        
-        ul, ol {
-            list-style: none;
-        }
-        
-        /* ===== UTILITY CLASSES ===== */
-        .container {
-            width: 100%;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--space-md);
-        }
-        
-        .section {
-            padding: var(--space-xl) 0;
-        }
-        
-        .section--large {
-            padding: var(--space-2xl) 0;
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-        
-        /* ===== TYPOGRAPHY ===== */
-        .heading-display {
-            font-family: var(--font-display);
-            font-size: clamp(40px, 6vw, 72px);
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-        }
-        
-        .heading-1 {
-            font-family: var(--font-heading);
-            font-size: clamp(32px, 4vw, 48px);
-            font-weight: 700;
-            line-height: 1.2;
-            letter-spacing: -0.01em;
-        }
-        
-        .heading-2 {
-            font-family: var(--font-heading);
-            font-size: clamp(24px, 3vw, 36px);
-            font-weight: 600;
-            line-height: 1.3;
-        }
-        
-        .heading-3 {
-            font-family: var(--font-heading);
-            font-size: clamp(18px, 2vw, 24px);
-            font-weight: 600;
-            line-height: 1.4;
-        }
-        
-        .body-large {
-            font-size: 18px;
-            line-height: 1.7;
-        }
-        
-        .body-small {
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        
-        .label {
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        }
-        
-        .tagline {
-            color: var(--color-accent);
-            font-weight: 500;
-        }
-        
-        /* ===== BUTTONS ===== */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--space-xs);
-            padding: 14px 28px;
-            font-family: var(--font-heading);
-            font-size: 15px;
-            font-weight: 600;
-            border-radius: var(--border-radius);
-            transition: all var(--transition-fast);
-            white-space: nowrap;
-        }
-        
-        .btn--primary {
-            background: var(--color-accent);
-            color: var(--color-white);
-        }
-        
-        .btn--primary:hover {
-            background: var(--color-accent-hover);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .btn--secondary {
-            background: transparent;
-            color: var(--color-dark);
-            border: 2px solid var(--color-border);
-        }
-        
-        .btn--secondary:hover {
-            border-color: var(--color-accent);
-            color: var(--color-accent);
-        }
-        
-        .btn--ghost {
-            background: transparent;
-            color: var(--color-accent);
-            padding: 8px 16px;
-        }
-        
-        .btn--ghost:hover {
-            background: rgba(201, 169, 110, 0.1);
-        }
-        
-        .btn--large {
-            padding: 18px 36px;
-            font-size: 16px;
-        }
-        
-        /* ===== NAVIGATION ===== */
-        .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: var(--nav-height);
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            z-index: 1000;
-            border-bottom: 1px solid var(--color-border);
-            transition: all var(--transition-normal);
-        }
-        
-        .nav--scrolled {
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .nav__container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 100%;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--space-md);
-        }
-        
-        .nav__logo {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-            font-family: var(--font-heading);
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--color-dark);
-        }
-        
-        .nav__logo-placeholder {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
-            border-radius: var(--border-radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-white);
-            font-weight: 700;
-            font-size: 18px;
-        }
-        
-        .nav__menu {
-            display: flex;
-            align-items: center;
-            gap: var(--space-lg);
-        }
-        
-        .nav__links {
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
-        }
-        
-        .nav__link {
-            font-size: 15px;
-            font-weight: 500;
-            color: var(--color-neutral);
-            padding: 8px 0;
-            position: relative;
-        }
-        
-        .nav__link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--color-accent);
-            transition: width var(--transition-fast);
-        }
-        
-        .nav__link:hover {
-            color: var(--color-dark);
-        }
-        
-        .nav__link:hover::after {
-            width: 100%;
-        }
-        
-        .nav__actions {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-        
-        .lang-switch {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            padding: 6px 12px;
-            background: var(--color-light-gray);
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 500;
-        }
-        
-        .lang-switch__btn {
-            padding: 4px 10px;
-            border-radius: 16px;
-            transition: all var(--transition-fast);
-            color: var(--color-neutral);
-        }
-        
-        .lang-switch__btn--active {
-            background: var(--color-white);
-            color: var(--color-dark);
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .lang-switch__btn:hover:not(.lang-switch__btn--active) {
-            color: var(--color-dark);
-        }
-        
-        .nav__mobile-toggle {
-            display: none;
-            width: 44px;
-            height: 44px;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: var(--color-dark);
-        }
-        
-        /* Mobile Navigation */
-        @media (max-width: 768px) {
-            .nav__menu {
-                position: fixed;
-                top: var(--nav-height);
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: var(--color-white);
-                flex-direction: column;
-                padding: var(--space-lg);
-                gap: var(--space-md);
-                transform: translateX(100%);
-                transition: transform var(--transition-normal);
-            }
-            
-            .nav__menu--open {
-                transform: translateX(0);
-            }
-            
-            .nav__links {
-                flex-direction: column;
-                width: 100%;
-            }
-            
-            .nav__link {
-                font-size: 18px;
-                padding: var(--space-sm) 0;
-                width: 100%;
-                text-align: center;
-            }
-            
-            .nav__actions {
-                flex-direction: column;
-                width: 100%;
-                gap: var(--space-md);
-            }
-            
-            .nav__actions .btn {
-                width: 100%;
-            }
-            
-            .nav__mobile-toggle {
-                display: flex;
-            }
-        }
-        
-        /* ===== HERO SECTION ===== */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: var(--nav-height);
-            background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-white) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero__bg-pattern {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 60%;
-            height: 100%;
-            opacity: 0.4;
-            background: radial-gradient(circle at 70% 30%, rgba(201, 169, 110, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 90% 80%, rgba(201, 169, 110, 0.1) 0%, transparent 40%);
-            pointer-events: none;
-        }
-        
-        .hero__container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-xl);
-            align-items: center;
-        }
-        
-        .hero__content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero__badge {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-xs);
-            padding: 8px 16px;
-            background: var(--color-white);
-            border: 1px solid var(--color-border);
-            border-radius: 30px;
-            font-size: 13px;
-            font-weight: 500;
-            margin-bottom: var(--space-md);
-            animation: fadeInUp 0.6s ease forwards;
-        }
-        
-        .hero__badge i {
-            color: var(--color-accent);
-        }
-        
-        .hero__title {
-            margin-bottom: var(--space-md);
-            animation: fadeInUp 0.6s ease 0.1s forwards;
-            opacity: 0;
-        }
-        
-        .hero__title-accent {
-            color: var(--color-accent);
-        }
-        
-        .hero__subtitle {
-            font-size: 20px;
-            color: var(--color-neutral);
-            margin-bottom: var(--space-lg);
-            max-width: 480px;
-            animation: fadeInUp 0.6s ease 0.2s forwards;
-            opacity: 0;
-        }
-        
-        .hero__subtitle-zh {
-            display: block;
-            font-family: 'Noto Sans TC', sans-serif;
-            margin-top: var(--space-xs);
-            font-size: 18px;
-        }
-        
-        .hero__cta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-sm);
-            animation: fadeInUp 0.6s ease 0.3s forwards;
-            opacity: 0;
-        }
-        
-        .hero__visual {
-            position: relative;
-            animation: fadeInRight 0.8s ease 0.4s forwards;
-            opacity: 0;
-        }
-        
-        .hero__dashboard {
-            background: var(--color-white);
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-lg);
-            overflow: hidden;
-            border: 1px solid var(--color-border);
-        }
-        
-        .hero__dashboard-header {
-            display: flex;
-            align-items: center;
-            gap: var(--space-xs);
-            padding: var(--space-sm) var(--space-md);
-            background: var(--color-light-gray);
-            border-bottom: 1px solid var(--color-border);
-        }
-        
-        .hero__dashboard-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-        
-        .hero__dashboard-dot--red { background: #FF5F57; }
-        .hero__dashboard-dot--yellow { background: #FFBD2E; }
-        .hero__dashboard-dot--green { background: #28CA41; }
-        
-        .hero__dashboard-content {
-            padding: var(--space-md);
-        }
-        
-        .hero__dashboard-kpi {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-sm);
-            margin-bottom: var(--space-md);
-        }
-        
-        .kpi-card {
-            background: var(--color-light-gray);
-            padding: var(--space-sm);
-            border-radius: var(--border-radius-sm);
-        }
-        
-        .kpi-card__label {
-            font-size: 11px;
-            color: var(--color-neutral);
-            margin-bottom: 4px;
-        }
-        
-        .kpi-card__value {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--color-dark);
-        }
-        
-        .kpi-card__change {
-            font-size: 12px;
-            color: var(--color-success);
-            display: flex;
-            align-items: center;
-            gap: 2px;
-        }
-        
-        .hero__dashboard-chart {
-            background: var(--color-light-gray);
-            border-radius: var(--border-radius-sm);
-            height: 120px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-around;
-            padding: var(--space-sm);
-        }
-        
-        .chart-bar {
-            width: 24px;
-            background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
-            border-radius: 4px 4px 0 0;
-            transition: height var(--transition-normal);
-        }
-        
-        .hero__floating-card {
-            position: absolute;
-            background: var(--color-white);
-            padding: var(--space-sm) var(--space-md);
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-md);
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        .hero__floating-card--1 {
-            top: 10%;
-            right: -20px;
-            animation-delay: 0s;
-        }
-        
-        .hero__floating-card--2 {
-            bottom: 20%;
-            left: -30px;
-            animation-delay: 1.5s;
-        }
-        
-        .floating-card__icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(201, 169, 110, 0.1);
-            border-radius: var(--border-radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-accent);
-            font-size: 20px;
-        }
-        
-        .floating-card__text {
-            font-size: 13px;
-        }
-        
-        .floating-card__label {
-            color: var(--color-neutral);
-        }
-        
-        .floating-card__value {
-            font-weight: 600;
-            color: var(--color-dark);
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-        
-        @media (max-width: 968px) {
-            .hero__container {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .hero__subtitle {
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
-            .hero__cta {
-                justify-content: center;
-            }
-            
-            .hero__visual {
-                max-width: 500px;
-                margin: 0 auto;
-            }
-            
-            .hero__floating-card {
-                display: none;
-            }
-        }
-        
-        /* ===== FEATURES SECTION ===== */
-        .features {
-            background: var(--color-white);
-        }
-        
-        .features__header {
-            text-align: center;
-            max-width: 640px;
-            margin: 0 auto var(--space-xl);
-        }
-        
-        .features__label {
-            color: var(--color-accent);
-            margin-bottom: var(--space-sm);
-        }
-        
-        .features__title {
-            margin-bottom: var(--space-md);
-        }
-        
-        .features__subtitle {
-            color: var(--color-neutral);
-            font-size: 18px;
-        }
-        
-        .features__grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-md);
-        }
-        
-        .feature-card {
-            background: var(--color-light-gray);
-            padding: var(--space-lg);
-            border-radius: var(--border-radius-lg);
-            transition: all var(--transition-normal);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--color-accent);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--transition-normal);
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .feature-card:hover::before {
-            transform: scaleX(1);
-        }
-        
-        .feature-card__icon {
-            width: 56px;
-            height: 56px;
-            background: var(--color-white);
-            border-radius: var(--border-radius);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            color: var(--color-accent);
-            margin-bottom: var(--space-md);
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .feature-card__title {
-            margin-bottom: var(--space-sm);
-        }
-        
-        .feature-card__desc {
-            color: var(--color-neutral);
-            font-size: 15px;
-        }
-        
-        @media (max-width: 968px) {
-            .features__grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 640px) {
-            .features__grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* ===== WORKFLOWS SECTION ===== */
-        .workflows {
-            background: var(--color-primary);
-        }
-        
-        .workflows__header {
-            text-align: center;
-            max-width: 640px;
-            margin: 0 auto var(--space-xl);
-        }
-        
-        .workflows__grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-md);
-        }
-        
-        .workflow-card {
-            background: var(--color-white);
-            border-radius: var(--border-radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: all var(--transition-normal);
-        }
-        
-        .workflow-card:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-4px);
-        }
-        
-        .workflow-card__visual {
-            height: 180px;
-            background: linear-gradient(135deg, var(--color-light-gray) 0%, var(--color-primary) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .workflow-card__icon-large {
-            font-size: 64px;
-            color: var(--color-accent);
-            opacity: 0.3;
-        }
-        
-        .workflow-card__badge {
-            position: absolute;
-            top: var(--space-sm);
-            left: var(--space-sm);
-            padding: 4px 12px;
-            background: var(--color-white);
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 600;
-            color: var(--color-accent);
-        }
-        
-        .workflow-card__content {
-            padding: var(--space-md);
-        }
-        
-        .workflow-card__title {
-            margin-bottom: var(--space-xs);
-        }
-        
-        .workflow-card__desc {
-            color: var(--color-neutral);
-            font-size: 14px;
-            margin-bottom: var(--space-md);
-        }
-        
-        .workflow-card__steps {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-xs);
-        }
-        
-        .workflow-step {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-            font-size: 13px;
-            color: var(--color-neutral);
-        }
-        
-        .workflow-step__number {
-            width: 24px;
-            height: 24px;
-            background: var(--color-light-gray);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--color-accent);
-        }
-        
-        @media (max-width: 968px) {
-            .workflows__grid {
-                grid-template-columns: 1fr;
-                max-width: 400px;
-                margin: 0 auto;
-            }
-        }
-        
-        /* ===== DASHBOARD PREVIEW SECTION ===== */
-        .dashboard-preview {
-            background: var(--color-dark);
-            color: var(--color-white);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .dashboard-preview::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 20% 80%, rgba(201, 169, 110, 0.1) 0%, transparent 50%);
-            pointer-events: none;
-        }
-        
-        .dashboard-preview__container {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: var(--space-xl);
-            align-items: center;
-        }
-        
-        .dashboard-preview__content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .dashboard-preview__label {
-            color: var(--color-accent);
-            margin-bottom: var(--space-sm);
-        }
-        
-        .dashboard-preview__title {
-            margin-bottom: var(--space-md);
-        }
-        
-        .dashboard-preview__desc {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 18px;
-            margin-bottom: var(--space-lg);
-        }
-        
-        .dashboard-preview__features {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-sm);
-            margin-bottom: var(--space-lg);
-        }
-        
-        .preview-feature {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-        
-        .preview-feature__icon {
-            width: 32px;
-            height: 32px;
-            background: rgba(201, 169, 110, 0.2);
-            border-radius: var(--border-radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-accent);
-        }
-        
-        .preview-feature__text {
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .dashboard-preview__visual {
-            position: relative;
-        }
-        
-        .dashboard-preview__mockup {
-            background: var(--color-white);
-            border-radius: var(--border-radius-lg);
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-        
-        .mockup-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: var(--space-sm) var(--space-md);
-            background: var(--color-light-gray);
-            border-bottom: 1px solid var(--color-border);
-        }
-        
-        .mockup-header__left {
-            display: flex;
-            align-items: center;
-            gap: var(--space-xs);
-        }
-        
-        .mockup-header__dots {
-            display: flex;
-            gap: 6px;
-        }
-        
-        .mockup-header__dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-        
-        .mockup-header__title {
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--color-dark);
-            margin-left: var(--space-sm);
-        }
-        
-        .mockup-sidebar {
-            width: 200px;
-            background: var(--color-dark);
-            padding: var(--space-md);
-            position: absolute;
-            left: 0;
-            top: 44px;
-            bottom: 0;
-        }
-        
-        .mockup-content {
-            padding: var(--space-md);
-            margin-left: 200px;
-            min-height: 300px;
-        }
-        
-        .mockup-content__grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--space-sm);
-            margin-bottom: var(--space-md);
-        }
-        
-        .mockup-stat {
-            background: var(--color-light-gray);
-            padding: var(--space-sm);
-            border-radius: var(--border-radius-sm);
-        }
-        
-        .mockup-stat__label {
-            font-size: 11px;
-            color: var(--color-neutral);
-        }
-        
-        .mockup-stat__value {
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--color-dark);
-        }
-        
-        .mockup-chart-placeholder {
-            background: var(--color-light-gray);
-            height: 150px;
-            border-radius: var(--border-radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-neutral);
-        }
-        
-        .sidebar-nav {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-xs);
-        }
-        
-        .sidebar-nav__item {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-            padding: var(--space-xs) var(--space-sm);
-            border-radius: var(--border-radius-sm);
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.6);
-            transition: all var(--transition-fast);
-        }
-        
-        .sidebar-nav__item--active {
-            background: rgba(201, 169, 110, 0.2);
-            color: var(--color-accent);
-        }
-        
-        .sidebar-nav__item:hover {
-            color: var(--color-white);
-        }
-        
-        @media (max-width: 968px) {
-            .dashboard-preview__container {
-                grid-template-columns: 1fr;
-            }
-            
-            .dashboard-preview__visual {
-                order: -1;
-            }
-            
-            .mockup-sidebar {
-                display: none;
-            }
-            
-            .mockup-content {
-                margin-left: 0;
-            }
-        }
-        
-        /* ===== KEVIN HUANG SECTION ===== */
-        .founder {
-            background: var(--color-white);
-        }
-        
-        .founder__container {
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: var(--space-xl);
-            align-items: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .founder__image {
-            position: relative;
-        }
-        
-        .founder__image-placeholder {
-            width: 100%;
-            aspect-ratio: 1;
-            background: linear-gradient(135deg, var(--color-light-gray) 0%, var(--color-primary) 100%);
-            border-radius: var(--border-radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-neutral);
-            font-size: 14px;
-        }
-        
-        .founder__badge {
-            position: absolute;
-            bottom: -10px;
-            right: -10px;
-            background: var(--color-accent);
-            color: var(--color-white);
-            padding: var(--space-sm) var(--space-md);
-            border-radius: var(--border-radius);
-            font-size: 13px;
-            font-weight: 600;
-            box-shadow: var(--shadow-md);
-        }
-        
-        .founder__content {
-            
-        }
-        
-        .founder__label {
-            color: var(--color-accent);
-            margin-bottom: var(--space-sm);
-        }
-        
-        .founder__name {
-            margin-bottom: var(--space-sm);
-        }
-        
-        .founder__title {
-            color: var(--color-neutral);
-            font-size: 18px;
-            margin-bottom: var(--space-md);
-        }
-        
-        .founder__bio {
-            color: var(--color-neutral);
-            margin-bottom: var(--space-md);
-        }
-        
-        .founder__quote {
-            padding: var(--space-md);
-            background: var(--color-light-gray);
-            border-left: 4px solid var(--color-accent);
-            border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
-            font-style: italic;
-            color: var(--color-dark);
-        }
-        
-        @media (max-width: 768px) {
-            .founder__container {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            .founder__image {
-                max-width: 250px;
-                margin: 0 auto;
-            }
-            
-            .founder__badge {
-                right: auto;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-        
-        /* ===== CTA SECTION ===== */
-        .cta {
-            background: linear-gradient(135deg, var(--color-dark) 0%, #2a2a2a 100%);
-            color: var(--color-white);
-            text-align: center;
-        }
-        
-        .cta__title {
-            margin-bottom: var(--space-md);
-        }
-        
-        .cta__subtitle {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 18px;
-            max-width: 500px;
-            margin: 0 auto var(--space-lg);
-        }
-        
-        .cta__buttons {
-            display: flex;
-            gap: var(--space-sm);
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .cta__buttons .btn--secondary {
-            border-color: rgba(255, 255, 255, 0.3);
-            color: var(--color-white);
-        }
-        
-        .cta__buttons .btn--secondary:hover {
-            border-color: var(--color-accent);
-            color: var(--color-accent);
-        }
-        
-        /* ===== CONTACT FORM SECTION ===== */
-        .contact {
-            background: var(--color-primary);
-        }
-        
-        .contact__container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-xl);
-            align-items: start;
-        }
-        
-        .contact__info {
-            
-        }
-        
-        .contact__label {
-            color: var(--color-accent);
-            margin-bottom: var(--space-sm);
-        }
-        
-        .contact__title {
-            margin-bottom: var(--space-md);
-        }
-        
-        .contact__desc {
-            color: var(--color-neutral);
-            margin-bottom: var(--space-lg);
-        }
-        
-        .contact__methods {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-md);
-        }
-        
-        .contact-method {
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
-        }
-        
-        .contact-method__icon {
-            width: 48px;
-            height: 48px;
-            background: var(--color-white);
-            border-radius: var(--border-radius);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            color: var(--color-accent);
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .contact-method__label {
-            font-size: 13px;
-            color: var(--color-neutral);
-        }
-        
-        .contact-method__value {
-            font-weight: 600;
-            color: var(--color-dark);
-        }
-        
-        .contact__form-wrapper {
-            background: var(--color-white);
-            padding: var(--space-lg);
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .form__group {
-            margin-bottom: var(--space-md);
-        }
-        
-        .form__label {
-            display: block;
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--color-dark);
-            margin-bottom: var(--space-xs);
-        }
-        
-        .form__input,
-        .form__textarea,
-        .form__select {
-            width: 100%;
-            padding: 14px 16px;
-            border: 2px solid var(--color-border);
-            border-radius: var(--border-radius-sm);
-            font-family: inherit;
-            font-size: 15px;
-            color: var(--color-dark);
-            transition: border-color var(--transition-fast);
-        }
-        
-        .form__input:focus,
-        .form__textarea:focus,
-        .form__select:focus {
-            outline: none;
-            border-color: var(--color-accent);
-        }
-        
-        .form__textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        
-        .form__submit {
-            width: 100%;
-            margin-top: var(--space-sm);
-        }
-        
-        @media (max-width: 768px) {
-            .contact__container {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* ===== FOOTER ===== */
-        .footer {
-            background: var(--color-dark);
-            color: var(--color-white);
-            padding: var(--space-xl) 0 var(--space-md);
-        }
-        
-        .footer__top {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: var(--space-lg);
-            padding-bottom: var(--space-lg);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .footer__brand {
-            
-        }
-        
-        .footer__logo {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-            font-family: var(--font-heading);
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: var(--space-md);
-        }
-        
-        .footer__logo-placeholder {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
-            border-radius: var(--border-radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 18px;
-        }
-        
-        .footer__tagline {
-            color: rgba(255, 255, 255, 0.6);
-            margin-bottom: var(--space-md);
-            max-width: 300px;
-        }
-        
-        .footer__social {
-            display: flex;
-            gap: var(--space-sm);
-        }
-        
-        .footer__social-link {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: var(--border-radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-white);
-            transition: all var(--transition-fast);
-        }
-        
-        .footer__social-link:hover {
-            background: var(--color-accent);
-        }
-        
-        .footer__column {
-            
-        }
-        
-        .footer__column-title {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: var(--space-md);
-        }
-        
-        .footer__links {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-xs);
-        }
-        
-        .footer__link {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 14px;
-            transition: color var(--transition-fast);
-        }
-        
-        .footer__link:hover {
-            color: var(--color-accent);
-        }
-        
-        .footer__bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: var(--space-md);
-        }
-        
-        .footer__copy {
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 13px;
-        }
-        
-        .footer__legal {
-            display: flex;
-            gap: var(--space-md);
-        }
-        
-        .footer__legal-link {
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 13px;
-        }
-        
-        .footer__legal-link:hover {
-            color: var(--color-accent);
-        }
-        
-        @media (max-width: 968px) {
-            .footer__top {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .footer__brand {
-                grid-column: span 2;
-            }
-        }
-        
-        @media (max-width: 640px) {
-            .footer__top {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer__brand {
-                grid-column: auto;
-            }
-            
-            .footer__bottom {
-                flex-direction: column;
-                gap: var(--space-sm);
-                text-align: center;
-            }
-        }
-        
-        /* ===== CHATBOT FLOATING BUTTON ===== */
-        .chatbot-trigger {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
-            border-radius: 50%;
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-white);
-            font-size: 28px;
-            cursor: pointer;
-            z-index: 1001;
-            transition: all var(--transition-fast);
-        }
-        
-        .chatbot-trigger:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 32px rgba(201, 169, 110, 0.4);
-        }
-        
-        .chatbot-trigger__badge {
-            position: absolute;
-            top: -4px;
-            right: -4px;
-            width: 20px;
-            height: 20px;
-            background: var(--color-success);
-            border-radius: 50%;
-            border: 3px solid var(--color-white);
-        }
-        
-        /* ===== CHATBOT WINDOW ===== */
-        .chatbot {
-            position: fixed;
-            bottom: 100px;
-            right: 24px;
-            width: 380px;
-            max-height: 600px;
-            background: var(--color-white);
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            flex-direction: column;
-            z-index: 1000;
-            transform: translateY(20px);
-            opacity: 0;
-            visibility: hidden;
-            transition: all var(--transition-normal);
-        }
-        
-        .chatbot--open {
-            transform: translateY(0);
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .chatbot__header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: var(--space-md);
-            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
-            border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
-            color: var(--color-white);
-        }
-        
-        .chatbot__header-info {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-        
-        .chatbot__avatar {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-        }
-        
-        .chatbot__name {
-            font-weight: 600;
-        }
-        
-        .chatbot__status {
-            font-size: 12px;
-            opacity: 0.9;
-        }
-        
-        .chatbot__close {
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-white);
-            font-size: 20px;
-            opacity: 0.8;
-            transition: opacity var(--transition-fast);
-        }
-        
-        .chatbot__close:hover {
-            opacity: 1;
-        }
-        
-        .chatbot__messages {
-            flex: 1;
-            overflow-y: auto;
-            padding: var(--space-md);
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-sm);
-            max-height: 400px;
-        }
-        
-        .chat-message {
-            max-width: 85%;
-            padding: var(--space-sm) var(--space-md);
-            border-radius: var(--border-radius);
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        
-        .chat-message--bot {
-            align-self: flex-start;
-            background: var(--color-light-gray);
-            border-bottom-left-radius: 4px;
-        }
-        
-        .chat-message--user {
-            align-self: flex-end;
-            background: var(--color-accent);
-            color: var(--color-white);
-            border-bottom-right-radius: 4px;
-        }
-        
-        .chat-message--typing {
-            display: flex;
-            gap: 4px;
-            padding: var(--space-sm) var(--space-md);
-        }
-        
-        .typing-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--color-neutral);
-            border-radius: 50%;
-            animation: typingDot 1.4s infinite;
-        }
-        
-        .typing-dot:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-        
-        .typing-dot:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-        
-        @keyframes typingDot {
-            0%, 60%, 100% {
-                transform: translateY(0);
-                opacity: 0.6;
-            }
-            30% {
-                transform: translateY(-4px);
-                opacity: 1;
-            }
-        }
-        
-        .chatbot__input-area {
-            display: flex;
-            gap: var(--space-xs);
-            padding: var(--space-md);
-            border-top: 1px solid var(--color-border);
-        }
-        
-        .chatbot__input {
-            flex: 1;
-            padding: 12px 16px;
-            border: 2px solid var(--color-border);
-            border-radius: 24px;
-            font-family: inherit;
-            font-size: 14px;
-            resize: none;
-            transition: border-color var(--transition-fast);
-        }
-        
-        .chatbot__input:focus {
-            outline: none;
-            border-color: var(--color-accent);
-        }
-        
-        .chatbot__send {
-            width: 44px;
-            height: 44px;
-            background: var(--color-accent);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-white);
-            font-size: 18px;
-            transition: all var(--transition-fast);
-        }
-        
-        .chatbot__send:hover {
-            background: var(--color-accent-hover);
-            transform: scale(1.05);
-        }
-        
-        .chatbot__send:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        @media (max-width: 480px) {
-            .chatbot {
-                right: 0;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                max-height: 100vh;
-                border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
-            }
-            
-            .chatbot__messages {
-                max-height: calc(100vh - 200px);
-            }
-            
-            .chatbot-trigger {
-                bottom: 16px;
-                right: 16px;
-            }
-        }
-        
-        /* ===== MOBILE STICKY CTA ===== */
-        .mobile-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: var(--space-sm) var(--space-md);
-            background: var(--color-white);
-            border-top: 1px solid var(--color-border);
-            z-index: 999;
-        }
-        
-        .mobile-cta__btn {
-            width: 100%;
-        }
-        
-        @media (max-width: 768px) {
-            .mobile-cta {
-                display: block;
-            }
-            
-            .chatbot-trigger {
-                bottom: 80px;
-            }
-        }
-        
-        /* ===== SCROLL ANIMATIONS ===== */
-        .fade-in-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-        
-        .fade-in-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* ===== BACKEND ADMIN STYLES (OPTIONAL - UNCOMMENT WHEN NEEDED) ===== */
-        /*
-        .admin-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 44px;
-            background: #1a1a2e;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 var(--space-md);
-            z-index: 2000;
-            font-size: 13px;
-            color: white;
-        }
-        
-        .admin-bar ~ .nav {
-            top: 44px;
-        }
-        
-        .admin-bar ~ .hero {
-            padding-top: calc(var(--nav-height) + 44px);
-        }
-        */
+            --cream: #FAF8F5;
+            --paper: #FFFFFF;
+            --sand: #F3EFE9;
+            --line: #E4DED4;
+            --ink: #1A1714;
+            --ink-soft: #565049;
+            --gold: #A9834B;
+            --gold-soft: #C9A96E;
+            --error: #B4553F;
+            --success: #5A7D5A;
+
+            --serif: 'Fraunces', 'Noto Serif TC', Georgia, serif;
+            --sans-head: 'DM Sans', 'Noto Sans TC', sans-serif;
+            --sans: 'Inter', 'Noto Sans TC', sans-serif;
+
+            --xs: 8px; --sm: 16px; --md: 24px; --lg: 48px; --xl: 88px; --2xl: 128px;
+            --max: 1160px;
+            --nav-h: 76px;
+            --r: 4px; --r-lg: 10px;
+            --shadow: 0 1px 2px rgba(26,23,20,0.04), 0 12px 40px rgba(26,23,20,0.06);
+            --t: 0.25s ease;
+        }
+        *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--sans); font-size: 17px; line-height: 1.7; color: var(--ink);
+            background: var(--paper); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        a { color: inherit; text-decoration: none; transition: color var(--t); }
+        ul { list-style: none; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 var(--md); }
+        .section { padding: var(--xl) 0; }
+        .rule { height: 1px; background: var(--line); border: 0; }
+
+        .kicker { font-family: var(--sans-head); font-size: 12px; font-weight: 600; letter-spacing: 0.18em;
+            text-transform: uppercase; color: var(--gold); }
+        .display { font-family: var(--serif); font-weight: 500; line-height: 1.08; letter-spacing: -0.015em;
+            font-size: clamp(38px, 5.6vw, 66px); }
+        .h2 { font-family: var(--serif); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em;
+            font-size: clamp(28px, 3.8vw, 42px); }
+        .h3 { font-family: var(--sans-head); font-weight: 600; font-size: 19px; line-height: 1.4; }
+        .lead { font-size: 19px; color: var(--ink-soft); }
+        .muted { color: var(--ink-soft); }
+        .zh { font-family: 'Noto Sans TC', sans-serif; }
+        .serif-em { font-family: var(--serif); font-style: italic; font-weight: 400; }
+
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+            padding: 15px 28px; font-family: var(--sans-head); font-size: 15px; font-weight: 600;
+            border-radius: var(--r); transition: all var(--t); }
+        .btn--primary { background: var(--ink); color: var(--cream); }
+        .btn--primary:hover { background: #000; transform: translateY(-1px); }
+        .btn--ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+        .btn--ghost:hover { border-color: var(--gold); color: var(--gold); }
+        .btn--lg { padding: 17px 34px; font-size: 16px; }
+        .link-arrow { font-family: var(--sans-head); font-weight: 600; font-size: 15px; color: var(--gold);
+            display: inline-flex; align-items: center; gap: 6px; }
+        .link-arrow i { transition: transform var(--t); }
+        .link-arrow:hover i { transform: translateX(4px); }
+
+        /* NAV */
+        .nav { position: fixed; inset: 0 0 auto 0; height: var(--nav-h); background: rgba(250,248,245,0.9);
+            backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); z-index: 1000;
+            border-bottom: 1px solid transparent; transition: border-color var(--t), background var(--t); }
+        .nav--scrolled { border-bottom-color: var(--line); }
+        .nav__in { display: flex; align-items: center; justify-content: space-between; height: 100%;
+            max-width: var(--max); margin: 0 auto; padding: 0 var(--md); }
+        .logo { display: flex; align-items: center; gap: 11px; font-family: var(--serif); font-weight: 600;
+            font-size: 21px; letter-spacing: -0.01em; color: var(--ink); }
+        .logo__mark { width: 34px; height: 34px; border: 1px solid var(--ink); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600; }
+        .menu { display: flex; align-items: center; gap: var(--lg); }
+        .menu__links { display: flex; align-items: center; gap: var(--md); }
+        .menu__link { font-family: var(--sans-head); font-size: 15px; font-weight: 500; color: var(--ink-soft); }
+        .menu__link:hover { color: var(--ink); }
+        .burger { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; font-size: 24px; }
+        @media (max-width: 880px) {
+            .menu { position: fixed; inset: var(--nav-h) 0 0 0; background: var(--cream); flex-direction: column;
+                justify-content: center; gap: var(--lg); transform: translateX(100%); transition: transform 0.3s ease; }
+            .menu--open { transform: translateX(0); }
+            .menu__links { flex-direction: column; gap: var(--md); }
+            .menu__link { font-size: 20px; }
+            .burger { display: flex; }
+        }
+
+        /* HERO */
+        .hero { padding: calc(var(--nav-h) + var(--xl)) 0 var(--xl); background: linear-gradient(180deg, var(--cream), var(--paper)); }
+        .hero__grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: var(--xl); align-items: center; }
+        .hero__kicker { margin-bottom: var(--md); }
+        .hero__title { margin-bottom: var(--md); }
+        .hero__title em { font-style: italic; color: var(--gold); }
+        .hero__lead { max-width: 520px; margin-bottom: var(--lg); }
+        .hero__cta { display: flex; flex-wrap: wrap; gap: var(--sm); margin-bottom: var(--md); }
+        .hero__fine { font-size: 14px; color: var(--ink-soft); letter-spacing: 0.01em; }
+
+        /* Answer card */
+        .answer { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow); overflow: hidden; }
+        .answer__bar { display: flex; align-items: center; gap: 10px; padding: 13px var(--md); border-bottom: 1px solid var(--line);
+            font-family: var(--sans-head); font-size: 13px; color: var(--ink-soft); letter-spacing: 0.02em; }
+        .answer__bar i { color: var(--gold); font-size: 17px; }
+        .answer__body { padding: var(--md); }
+        .answer__q { font-family: var(--serif); font-size: 18px; color: var(--ink); margin-bottom: 14px; }
+        .answer__a { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 14px; }
+        .row { display: flex; align-items: center; gap: 12px; padding: 11px 13px; border-radius: var(--r); margin-bottom: 8px; font-size: 14px; }
+        .row--rec { background: var(--sand); }
+        .row--rec i { color: var(--success); }
+        .row--you { background: var(--paper); border: 1px dashed rgba(180,85,63,0.5); color: var(--ink); }
+        .row--you i { color: var(--error); }
+        .answer__foot { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line);
+            font-size: 13px; color: var(--error); display: flex; align-items: center; gap: 7px; }
+
+        @media (max-width: 880px) {
+            .hero__grid { grid-template-columns: 1fr; gap: var(--lg); }
+            .answer { max-width: 460px; }
+        }
+
+        /* PRINCIPLES STRIP */
+        .principles { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--cream); }
+        .principles__grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+        .principle { padding: var(--lg) var(--md); border-right: 1px solid var(--line); }
+        .principle:last-child { border-right: 0; }
+        .principle i { font-size: 22px; color: var(--gold); }
+        .principle h4 { font-family: var(--sans-head); font-size: 15px; font-weight: 600; margin: 10px 0 4px; }
+        .principle p { font-size: 13.5px; color: var(--ink-soft); }
+        @media (max-width: 880px) { .principles__grid { grid-template-columns: repeat(2, 1fr); }
+            .principle:nth-child(2) { border-right: 0; } .principle:nth-child(1), .principle:nth-child(2) { border-bottom: 1px solid var(--line); } }
+        @media (max-width: 520px) { .principles__grid { grid-template-columns: 1fr; } .principle { border-right: 0; border-bottom: 1px solid var(--line); } }
+
+        /* SECTION HEAD */
+        .head { max-width: 700px; margin-bottom: var(--lg); }
+        .head .kicker { display: block; margin-bottom: 14px; }
+        .head .h2 { margin-bottom: var(--sm); }
+        .head p { font-size: 18px; color: var(--ink-soft); }
+        .head--center { margin-left: auto; margin-right: auto; text-align: center; }
+
+        /* PROBLEM */
+        .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--lg); }
+        .brick__num { font-family: var(--serif); font-size: 15px; color: var(--gold); }
+        .brick h3 { margin: 12px 0 8px; }
+        .brick p { color: var(--ink-soft); font-size: 15.5px; }
+        .brick { padding-top: var(--md); border-top: 2px solid var(--ink); }
+        @media (max-width: 880px) { .cols3 { grid-template-columns: 1fr; gap: var(--md); } }
+
+        /* METHOD */
+        .method { background: var(--cream); }
+        .step { display: grid; grid-template-columns: 120px 1fr; gap: var(--lg); padding: var(--lg) 0; border-bottom: 1px solid var(--line); align-items: start; }
+        .step:first-of-type { border-top: 1px solid var(--line); }
+        .step__n { font-family: var(--serif); font-size: 44px; font-weight: 400; color: var(--gold); line-height: 1; }
+        .step__b h3 { font-family: var(--serif); font-weight: 500; font-size: 24px; margin-bottom: 8px; }
+        .step__b p { color: var(--ink-soft); max-width: 640px; }
+        @media (max-width: 720px) { .step { grid-template-columns: 1fr; gap: var(--sm); } .step__n { font-size: 32px; } }
+
+        /* PHILOSOPHY */
+        .philosophy { background: var(--ink); color: var(--cream); text-align: center; }
+        .philosophy blockquote { font-family: var(--serif); font-weight: 400; font-size: clamp(24px, 3.4vw, 36px);
+            line-height: 1.35; max-width: 860px; margin: 0 auto; letter-spacing: -0.01em; }
+        .philosophy blockquote em { color: var(--gold-soft); font-style: italic; }
+        .philosophy cite { display: block; margin-top: var(--md); font-family: var(--sans-head); font-style: normal;
+            font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(250,248,245,0.5); }
+
+        /* STANDARDS */
+        .standards__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--lg); }
+        .std i { font-size: 26px; color: var(--gold); }
+        .std h3 { margin: 14px 0 8px; }
+        .std p { color: var(--ink-soft); font-size: 15.5px; }
+        @media (max-width: 880px) { .standards__grid { grid-template-columns: 1fr; gap: var(--md); } }
+
+        /* PRICING */
+        .pricing { background: var(--cream); }
+        .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--md); align-items: stretch; }
+        .tier { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-lg); padding: var(--lg); display: flex; flex-direction: column; }
+        .tier--feat { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+        .tier__name { font-family: var(--sans-head); font-weight: 600; letter-spacing: 0.02em; font-size: 15px; text-transform: uppercase; color: var(--gold); }
+        .tier__price { font-family: var(--serif); font-weight: 500; font-size: 36px; margin-top: 12px; line-height: 1.05; }
+        .tier__unit { font-size: 13.5px; color: var(--ink-soft); margin-bottom: var(--md); }
+        .tier--feat .tier__unit { color: rgba(250,248,245,0.55); }
+        .tier ul { display: flex; flex-direction: column; gap: 11px; margin-bottom: var(--lg); flex: 1; }
+        .tier li { display: flex; gap: 10px; font-size: 14.5px; align-items: flex-start; }
+        .tier li i { color: var(--gold); margin-top: 4px; font-size: 13px; }
+        .tier--feat .btn { background: var(--gold-soft); color: var(--ink); }
+        .pricing__note { text-align: center; margin-top: var(--lg); font-size: 14px; color: var(--ink-soft); }
+        @media (max-width: 880px) { .tiers { grid-template-columns: 1fr; } }
+
+        /* FAQ */
+        .faq__list { max-width: 800px; }
+        .qa { border-bottom: 1px solid var(--line); }
+        .qa__q { width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; gap: var(--md);
+            padding: var(--md) 0; font-family: var(--sans-head); font-size: 17px; font-weight: 600; }
+        .qa__q i { color: var(--gold); transition: transform var(--t); flex-shrink: 0; }
+        .qa--open .qa__q i { transform: rotate(45deg); }
+        .qa__a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: var(--ink-soft); }
+        .qa--open .qa__a { max-height: 340px; }
+        .qa__a p { padding-bottom: var(--md); max-width: 720px; }
+
+        /* CTA */
+        .cta { background: var(--ink); color: var(--cream); text-align: center; }
+        .cta .h2 { margin-bottom: 14px; }
+        .cta__sub { color: rgba(250,248,245,0.7); font-size: 18px; max-width: 560px; margin: 0 auto var(--lg); }
+        .cta__row { display: flex; gap: var(--sm); justify-content: center; flex-wrap: wrap; }
+        .cta .btn--ghost { border-color: rgba(250,248,245,0.28); color: var(--cream); }
+        .cta .btn--ghost:hover { border-color: var(--gold-soft); color: var(--gold-soft); }
+        .cta__fine { margin-top: var(--md); font-size: 14px; color: rgba(250,248,245,0.5); }
+        .cta__fine a { color: var(--gold-soft); }
+
+        /* FOOTER */
+        .footer { background: var(--cream); padding: var(--xl) 0 var(--lg); border-top: 1px solid var(--line); }
+        .footer__top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: var(--lg); padding-bottom: var(--lg); }
+        .footer__logo { display: flex; align-items: center; gap: 11px; font-family: var(--serif); font-weight: 600; font-size: 20px; margin-bottom: 12px; }
+        .footer__logo .logo__mark { border-color: var(--ink); }
+        .footer__tag { color: var(--ink-soft); max-width: 320px; font-size: 15px; }
+        .footer__ct { font-family: var(--sans-head); font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 14px; }
+        .footer__links { display: flex; flex-direction: column; gap: 10px; }
+        .footer__links a { color: var(--ink-soft); font-size: 15px; }
+        .footer__links a:hover { color: var(--gold); }
+        .footer__legal { display: flex; justify-content: space-between; align-items: center; padding-top: var(--md); border-top: 1px solid var(--line); flex-wrap: wrap; gap: 10px; }
+        .footer__legal p { font-size: 13px; color: var(--ink-soft); }
+        @media (max-width: 720px) { .footer__top { grid-template-columns: 1fr; gap: var(--md); } }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav" id="nav">
-        <div class="nav__container">
-            <a href="#" class="nav__logo">
-                <div class="nav__logo-placeholder">S</div>
-                SimplyAI.work
-            </a>
-            
-            <div class="nav__menu" id="navMenu">
-                <ul class="nav__links">
-                    <li><a href="#features" class="nav__link">Features</a></li>
-                    <li><a href="#workflows" class="nav__link">Workflows</a></li>
-                    <li><a href="#dashboard" class="nav__link">Dashboard</a></li>
-                    <li><a href="#about" class="nav__link">About</a></li>
-                    <li><a href="#contact" class="nav__link">Contact</a></li>
+        <div class="nav__in">
+            <a href="/" class="logo"><span class="logo__mark">S</span> SimplyAI</a>
+            <div class="menu" id="menu">
+                <ul class="menu__links">
+                    <li><a href="#method" class="menu__link">Method</a></li>
+                    <li><a href="#standards" class="menu__link">Standards</a></li>
+                    <li><a href="#pricing" class="menu__link">Engagements</a></li>
+                    <li><a href="#faq" class="menu__link">FAQ</a></li>
+                    <li><a href="/bossai/" class="menu__link">BossAI</a></li>
                 </ul>
-                
-                <div class="nav__actions">
-                    <div class="lang-switch">
-                        <button class="lang-switch__btn lang-switch__btn--active" data-lang="en">EN</button>
-                        <button class="lang-switch__btn" data-lang="zh">中文</button>
-                    </div>
-                    <a href="#contact" class="btn btn--primary">Book a Consultation</a>
-                </div>
+                <a href="#contact" class="btn btn--primary">Request an audit</a>
             </div>
-            
-            <button class="nav__mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-                <i class="ph ph-list"></i>
-            </button>
+            <button class="burger" id="burger" aria-label="Menu"><i class="ph ph-list"></i></button>
         </div>
     </nav>
-    
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero__bg-pattern"></div>
-        <div class="container hero__container">
-            <div class="hero__content">
-                <div class="hero__badge">
-                    <i class="ph ph-sparkle"></i>
-                    <span>AI-Powered Business Operations</span>
-                </div>
-                
-                <h1 class="heading-display hero__title">
-                    Drive your business with <span class="hero__title-accent">AI Copilot</span>
-                </h1>
-                
-                <p class="hero__subtitle">
-                    Intelligent automation that works alongside you — managing workflows, handling inquiries, and scaling your operations effortlessly.
-                    <span class="hero__subtitle-zh">老闆專車全能AI自駕</span>
-                </p>
-                
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="wrap hero__grid">
+            <div>
+                <p class="kicker hero__kicker">AI Search Visibility · Hong Kong &amp; Asia-Pacific</p>
+                <h1 class="display hero__title">Be the practice AI <em>recommends</em> — and correct what it gets wrong.</h1>
+                <p class="lead hero__lead">Your prospective patients and clients now ask ChatGPT, Gemini, and Perplexity before they ask anyone else. We ensure your practice is the trusted answer — in English and Chinese — and we fix the errors these systems repeat about you.</p>
                 <div class="hero__cta">
-                    <a href="#contact" class="btn btn--primary btn--large">
-                        <i class="ph ph-calendar-check"></i>
-                        Book a Consultation
-                    </a>
-                    <a href="#features" class="btn btn--secondary btn--large">
-                        <i class="ph ph-play-circle"></i>
-                        See How It Works
-                    </a>
+                    <a href="#contact" class="btn btn--primary btn--lg">Request an AI visibility audit</a>
+                    <a href="#method" class="btn btn--ghost btn--lg">See our method</a>
                 </div>
+                <p class="hero__fine">For aesthetic clinics, law firms &amp; consultancies. <span class="zh">中英文 AI 搜尋可見度。</span></p>
             </div>
-            
-            <div class="hero__visual">
-                <div class="hero__dashboard">
-                    <div class="hero__dashboard-header">
-                        <span class="hero__dashboard-dot hero__dashboard-dot--red"></span>
-                        <span class="hero__dashboard-dot hero__dashboard-dot--yellow"></span>
-                        <span class="hero__dashboard-dot hero__dashboard-dot--green"></span>
-                    </div>
-                    <div class="hero__dashboard-content">
-                        <div class="hero__dashboard-kpi">
-                            <div class="kpi-card">
-                                <div class="kpi-card__label">Tasks Automated</div>
-                                <div class="kpi-card__value">847</div>
-                                <div class="kpi-card__change">
-                                    <i class="ph ph-trend-up"></i>
-                                    +23%
-                                </div>
-                            </div>
-                            <div class="kpi-card">
-                                <div class="kpi-card__label">Hours Saved</div>
-                                <div class="kpi-card__value">126</div>
-                                <div class="kpi-card__change">
-                                    <i class="ph ph-trend-up"></i>
-                                    +18%
-                                </div>
-                            </div>
-                            <div class="kpi-card">
-                                <div class="kpi-card__label">Response Rate</div>
-                                <div class="kpi-card__value">99%</div>
-                                <div class="kpi-card__change">
-                                    <i class="ph ph-trend-up"></i>
-                                    +5%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hero__dashboard-chart">
-                            <div class="chart-bar" style="height: 40%;"></div>
-                            <div class="chart-bar" style="height: 65%;"></div>
-                            <div class="chart-bar" style="height: 45%;"></div>
-                            <div class="chart-bar" style="height: 80%;"></div>
-                            <div class="chart-bar" style="height: 60%;"></div>
-                            <div class="chart-bar" style="height: 90%;"></div>
-                            <div class="chart-bar" style="height: 75%;"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero__floating-card hero__floating-card--1">
-                    <div class="floating-card__icon">
-                        <i class="ph ph-robot"></i>
-                    </div>
-                    <div class="floating-card__text">
-                        <div class="floating-card__label">AI Agents Active</div>
-                        <div class="floating-card__value">12 Running</div>
-                    </div>
-                </div>
-                
-                <div class="hero__floating-card hero__floating-card--2">
-                    <div class="floating-card__icon">
-                        <i class="ph ph-lightning"></i>
-                    </div>
-                    <div class="floating-card__text">
-                        <div class="floating-card__label">Avg Response</div>
-                        <div class="floating-card__value">< 2 seconds</div>
+            <div>
+                <div class="answer">
+                    <div class="answer__bar"><i class="ph ph-sparkle"></i> AI assistant · live answer</div>
+                    <div class="answer__body">
+                        <div class="answer__q">"Best aesthetic clinic in Central for pico laser?"</div>
+                        <p class="answer__a">A few well-regarded options:</p>
+                        <div class="row row--rec"><i class="ph ph-check-circle"></i><span><strong>Competitor Practice A</strong> — frequently recommended</span></div>
+                        <div class="row row--rec"><i class="ph ph-check-circle"></i><span><strong>Competitor Practice B</strong> — strong reputation</span></div>
+                        <div class="row row--you"><i class="ph ph-warning-circle"></i><span><strong>Your practice</strong> — not mentioned</span></div>
+                        <div class="answer__foot"><i class="ph ph-warning"></i> The price it quoted for you? Two years out of date.</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <!-- Features Section -->
-    <section class="features section section--large" id="features">
-        <div class="container">
-            <div class="features__header fade-in-up">
-                <p class="label features__label">Core Capabilities</p>
-                <h2 class="heading-1 features__title">Everything you need to run smarter</h2>
-                <p class="features__subtitle">Powerful AI tools designed specifically for business owners who want to scale without the complexity.</p>
-            </div>
-            
-            <div class="features__grid">
-                <div class="feature-card fade-in-up">
-                    <div class="feature-card__icon">
-                        <i class="ph ph-chats-circle"></i>
-                    </div>
-                    <h3 class="heading-3 feature-card__title">Intelligent Inquiry Handling</h3>
-                    <p class="feature-card__desc">AI agents respond to customer inquiries 24/7, qualifying leads and routing them appropriately — so you never miss an opportunity.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-card__icon">
-                        <i class="ph ph-flow-arrow"></i>
-                    </div>
-                    <h3 class="heading-3 feature-card__title">Workflow Automation</h3>
-                    <p class="feature-card__desc">Build custom workflows that connect your tools, automate repetitive tasks, and keep your operations running smoothly.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-card__icon">
-                        <i class="ph ph-instagram-logo"></i>
-                    </div>
-                    <h3 class="heading-3 feature-card__title">Content Generation</h3>
-                    <p class="feature-card__desc">Generate on-brand social media content, captions, and marketing materials that resonate with your audience.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-card__icon">
-                        <i class="ph ph-chart-line-up"></i>
-                    </div>
-                    <h3 class="heading-3 feature-card__title">Sales Pipeline Optimization</h3>
-                    <p class="feature-card__desc">Automatically nurture leads through your sales funnel with personalized follow-ups and timely engagement.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-card__icon">
-                        <i class="ph ph-users-three"></i>
-                    </div>
-                    <h3 class="heading-3 feature-card__title">Team & AI Collaboration</h3>
-                    <p class="feature-card__desc">Visualize your hybrid team with humans and AI agents working together in an intuitive org chart dashboard.</p>
-                </div>
-                
-                <div class="feature-card fade-in-up">
-                    <div class="feature-card__icon">
-                        <i class="ph ph-gauge"></i>
-                    </div>
-                    <h3 class="heading-3 feature-card__title">Real-Time Analytics</h3>
-                    <p class="feature-card__desc">Track KPIs, agent performance, and business metrics in a single dashboard — make data-driven decisions with ease.</p>
-                </div>
+    </header>
+
+    <!-- PRINCIPLES -->
+    <section class="principles">
+        <div class="wrap">
+            <div class="principles__grid">
+                <div class="principle"><i class="ph ph-scales"></i><h4>Compliance-first</h4><p>UMAO, Law Society &amp; PDPO built into every engagement.</p></div>
+                <div class="principle"><i class="ph ph-translate"></i><h4>Bilingual</h4><p>Measured in English and 中文 — where your market actually asks.</p></div>
+                <div class="principle"><i class="ph ph-chart-line-up"></i><h4>Evidence-based</h4><p>Reported as share of AI recommendations, before and after.</p></div>
+                <div class="principle"><i class="ph ph-user-focus"></i><h4>Principal-led</h4><p>Senior attention and discretion — not a junior account team.</p></div>
             </div>
         </div>
     </section>
-    
-    <!-- Workflows Section -->
-    <section class="workflows section section--large" id="workflows">
-        <div class="container">
-            <div class="workflows__header fade-in-up">
-                <p class="label tagline">Pre-Built Workflows</p>
-                <h2 class="heading-1">Ready to deploy, ready to scale</h2>
-                <p class="body-large" style="color: var(--color-neutral); margin-top: var(--space-sm);">Start with proven workflows that address the most common business challenges.</p>
+
+    <!-- PROBLEM -->
+    <section class="section">
+        <div class="wrap">
+            <div class="head">
+                <span class="kicker">The shift</span>
+                <h2 class="h2">AI is already advising your market about your practice.</h2>
+                <p>A growing share of high-value decisions now begin with an AI assistant — and it answers with one or two names, stated with confidence, drawn from sources most practices have never reviewed.</p>
             </div>
-            
-            <div class="workflows__grid">
-                <div class="workflow-card fade-in-up">
-                    <div class="workflow-card__visual">
-                        <i class="ph ph-envelope-simple workflow-card__icon-large"></i>
-                        <span class="workflow-card__badge">Most Popular</span>
-                    </div>
-                    <div class="workflow-card__content">
-                        <h3 class="heading-3 workflow-card__title">Sales Inquiry Handler</h3>
-                        <p class="workflow-card__desc">Automatically qualify and respond to incoming sales inquiries with intelligent conversation.</p>
-                        <div class="workflow-card__steps">
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">1</span>
-                                <span>Receive inquiry via form/email/chat</span>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">2</span>
-                                <span>AI qualifies lead with questions</span>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">3</span>
-                                <span>Route to sales or auto-respond</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="workflow-card fade-in-up">
-                    <div class="workflow-card__visual">
-                        <i class="ph ph-image-square workflow-card__icon-large"></i>
-                    </div>
-                    <div class="workflow-card__content">
-                        <h3 class="heading-3 workflow-card__title">IG Content Generator</h3>
-                        <p class="workflow-card__desc">Create scroll-stopping Instagram content with AI-generated visuals and captions.</p>
-                        <div class="workflow-card__steps">
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">1</span>
-                                <span>Input topic or product details</span>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">2</span>
-                                <span>AI generates post + caption options</span>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">3</span>
-                                <span>Review, edit, and schedule</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="workflow-card fade-in-up">
-                    <div class="workflow-card__visual">
-                        <i class="ph ph-funnel workflow-card__icon-large"></i>
-                    </div>
-                    <div class="workflow-card__content">
-                        <h3 class="heading-3 workflow-card__title">Sales Funnel Pusher</h3>
-                        <p class="workflow-card__desc">Nurture leads through your pipeline with automated, personalized follow-up sequences.</p>
-                        <div class="workflow-card__steps">
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">1</span>
-                                <span>Lead enters funnel stage</span>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">2</span>
-                                <span>AI sends personalized outreach</span>
-                            </div>
-                            <div class="workflow-step">
-                                <span class="workflow-step__number">3</span>
-                                <span>Track engagement & advance stage</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="cols3">
+                <div class="brick"><span class="brick__num">01</span><h3 class="h3">They ask AI first</h3><p>"Which clinic for this treatment?" "Do I need a lawyer for this?" If your practice isn't named, it isn't considered.</p></div>
+                <div class="brick"><span class="brick__num">02</span><h3 class="h3">And AI gets you wrong</h3><p>Outdated fees, closed locations, wrong practice areas, discontinued services — a reputational exposure for a firm, a regulatory one for a clinic.</p></div>
+                <div class="brick"><span class="brick__num">03</span><h3 class="h3">While competitors are named</h3><p>Recommendations are built from reviews, directories, and structured data your competitors happen to have, and you may not.</p></div>
             </div>
         </div>
     </section>
-    
-    <!-- Dashboard Preview Section -->
-    <section class="dashboard-preview section section--large" id="dashboard">
-        <div class="container dashboard-preview__container">
-            <div class="dashboard-preview__content fade-in-up">
-                <p class="label dashboard-preview__label">Boss Dashboard</p>
-                <h2 class="heading-1 dashboard-preview__title">Your command center for AI-powered operations</h2>
-                <p class="dashboard-preview__desc">Monitor KPIs, manage AI agents, and oversee your hybrid human-AI team from a single, intuitive interface.</p>
-                
-                <div class="dashboard-preview__features">
-                    <div class="preview-feature">
-                        <div class="preview-feature__icon">
-                            <i class="ph ph-chart-pie-slice"></i>
-                        </div>
-                        <span class="preview-feature__text">Real-time KPI tracking and insights</span>
-                    </div>
-                    <div class="preview-feature">
-                        <div class="preview-feature__icon">
-                            <i class="ph ph-robot"></i>
-                        </div>
-                        <span class="preview-feature__text">AI agent status and performance metrics</span>
-                    </div>
-                    <div class="preview-feature">
-                        <div class="preview-feature__icon">
-                            <i class="ph ph-tree-structure"></i>
-                        </div>
-                        <span class="preview-feature__text">Hybrid team org chart visualization</span>
-                    </div>
-                    <div class="preview-feature">
-                        <div class="preview-feature__icon">
-                            <i class="ph ph-git-branch"></i>
-                        </div>
-                        <span class="preview-feature__text">Visual workflow builder</span>
-                    </div>
-                </div>
-                
-                <a href="#contact" class="btn btn--primary">
-                    <i class="ph ph-rocket-launch"></i>
-                    Get Early Access
-                </a>
+
+    <!-- METHOD -->
+    <section class="section method" id="method">
+        <div class="wrap">
+            <div class="head"><span class="kicker">The method</span><h2 class="h2">Audit. Correct. Monitor.</h2></div>
+            <div class="step">
+                <div class="step__n">01</div>
+                <div class="step__b"><h3>Audit</h3><p>We put 50–100 of the questions your prospects actually ask to ChatGPT, Claude, Gemini, and Perplexity — in English and Chinese — and document precisely where you stand, who is recommended instead, and every factual error these systems state about you. Delivered within a week.</p></div>
             </div>
-            
-            <div class="dashboard-preview__visual fade-in-up">
-                <div class="dashboard-preview__mockup">
-                    <div class="mockup-header">
-                        <div class="mockup-header__left">
-                            <div class="mockup-header__dots">
-                                <span class="mockup-header__dot" style="background: #FF5F57;"></span>
-                                <span class="mockup-header__dot" style="background: #FFBD2E;"></span>
-                                <span class="mockup-header__dot" style="background: #28CA41;"></span>
-                            </div>
-                            <span class="mockup-header__title">Boss Dashboard — SimplyAI.work</span>
-                        </div>
-                    </div>
-                    <div style="position: relative;">
-                        <div class="mockup-sidebar">
-                            <nav class="sidebar-nav">
-                                <a class="sidebar-nav__item sidebar-nav__item--active">
-                                    <i class="ph ph-house"></i>
-                                    Overview
-                                </a>
-                                <a class="sidebar-nav__item">
-                                    <i class="ph ph-robot"></i>
-                                    AI Agents
-                                </a>
-                                <a class="sidebar-nav__item">
-                                    <i class="ph ph-flow-arrow"></i>
-                                    Workflows
-                                </a>
-                                <a class="sidebar-nav__item">
-                                    <i class="ph ph-users"></i>
-                                    Team
-                                </a>
-                                <a class="sidebar-nav__item">
-                                    <i class="ph ph-chart-bar"></i>
-                                    Analytics
-                                </a>
-                                <a class="sidebar-nav__item">
-                                    <i class="ph ph-gear"></i>
-                                    Settings
-                                </a>
-                            </nav>
-                        </div>
-                        <div class="mockup-content">
-                            <div class="mockup-content__grid">
-                                <div class="mockup-stat">
-                                    <div class="mockup-stat__label">Active Workflows</div>
-                                    <div class="mockup-stat__value">24</div>
-                                </div>
-                                <div class="mockup-stat">
-                                    <div class="mockup-stat__label">AI Agents</div>
-                                    <div class="mockup-stat__value">8</div>
-                                </div>
-                                <div class="mockup-stat">
-                                    <div class="mockup-stat__label">Tasks Today</div>
-                                    <div class="mockup-stat__value">156</div>
-                                </div>
-                                <div class="mockup-stat">
-                                    <div class="mockup-stat__label">Success Rate</div>
-                                    <div class="mockup-stat__value">98.5%</div>
-                                </div>
-                            </div>
-                            <div class="mockup-chart-placeholder">
-                                <span>Performance Analytics</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="step">
+                <div class="step__n">02</div>
+                <div class="step__b"><h3>Correct</h3><p>We remediate the sources these systems rely on — structured data, directories, business profiles, review platforms, and your own pages — restructured the way AI reads them, in both languages, and strictly within medical-advertising and professional-conduct rules.</p></div>
+            </div>
+            <div class="step">
+                <div class="step__n">03</div>
+                <div class="step__b"><h3>Monitor</h3><p>These models change without notice. We re-measure your share of AI recommendations each month, flag material shifts, and hold your position as competitors begin to act — reported before and after, with evidence.</p></div>
             </div>
         </div>
     </section>
-    
-    <!-- Kevin Huang Section -->
-    <section class="founder section section--large" id="about">
-        <div class="container founder__container">
-            <div class="founder__image fade-in-up">
-                <div class="founder__image-placeholder">
-                    [Photo Placeholder]<br>Kevin Huang
+
+    <!-- PHILOSOPHY -->
+    <section class="section philosophy">
+        <div class="wrap">
+            <blockquote>We don't game these systems. We make your practice <em>genuinely worth citing</em> — accurate, authoritative, and present wherever AI looks for an answer.</blockquote>
+            <cite>The SimplyAI standard</cite>
+        </div>
+    </section>
+
+    <!-- STANDARDS -->
+    <section class="section" id="standards">
+        <div class="wrap">
+            <div class="head"><span class="kicker">Why a specialist</span><h2 class="h2">Built for high-trust professional practices.</h2></div>
+            <div class="standards__grid">
+                <div class="std"><i class="ph ph-target"></i><h3 class="h3">Your questions, your competitors</h3><p>Prompt sets drawn from the real questions your patients and clients ask — 廣東話 included — benchmarked against your actual local competitors, not a generic score.</p></div>
+                <div class="std"><i class="ph ph-shield-check"></i><h3 class="h3">Compliance is the specialty</h3><p>Undesirable Medical Advertisements Ordinance and Medical Council guidance for clinics; Law Society practice-promotion rules for firms; PDPO throughout. We optimise accuracy and presence — never prohibited claims.</p></div>
+                <div class="std"><i class="ph ph-scan"></i><h3 class="h3">Honestly measured</h3><p>We report the share of AI recommendations you hold, before and after, with screenshots. No vague traffic promises, and no guarantees of a ranking no one can guarantee.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section pricing" id="pricing">
+        <div class="wrap">
+            <div class="head head--center"><span class="kicker">Engagements</span><h2 class="h2">Every engagement begins with a fixed-fee audit.</h2></div>
+            <div class="tiers">
+                <div class="tier">
+                    <div class="tier__name">Audit</div>
+                    <div class="tier__price">HK$8,800</div>
+                    <div class="tier__unit">clinic · HK$14,800 firm or multi-location · one-off</div>
+                    <ul>
+                        <li><i class="ph ph-check"></i> 50–100 buyer-intent prompts, four AI assistants</li>
+                        <li><i class="ph ph-check"></i> English &amp; 中文</li>
+                        <li><i class="ph ph-check"></i> Competitor share-of-voice</li>
+                        <li><i class="ph ph-check"></i> Full record of factual errors, with fixes</li>
+                        <li><i class="ph ph-check"></i> 45-minute walkthrough</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--ghost">Begin with an audit</a>
                 </div>
-                <div class="founder__badge">Founder & CEO</div>
-            </div>
-            
-            <div class="founder__content fade-in-up">
-                <p class="label founder__label">Meet the Founder</p>
-                <h2 class="heading-1 founder__name">Kevin Huang</h2>
-                <p class="founder__title">Founder & CEO, SimplyAI.work</p>
-                
-                <p class="founder__bio">
-                    Kevin brings over 15 years of experience in technology and business operations, with a passion for making enterprise-grade AI accessible to businesses of all sizes. His vision: every business owner deserves an AI copilot.
-                </p>
-                
-                <blockquote class="founder__quote">
-                    "Running a business shouldn't mean drowning in routine tasks. With the right AI tools, owners can focus on what truly matters — growing their vision and serving their customers."
-                </blockquote>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="cta section section--large">
-        <div class="container">
-            <h2 class="heading-1 cta__title fade-in-up">Ready to transform your business?</h2>
-            <p class="cta__subtitle fade-in-up">Join forward-thinking business owners who are already leveraging AI to work smarter, not harder.</p>
-            <div class="cta__buttons fade-in-up">
-                <a href="#contact" class="btn btn--primary btn--large">
-                    <i class="ph ph-calendar-check"></i>
-                    Book a Consultation
-                </a>
-                <a href="#features" class="btn btn--secondary btn--large">
-                    <i class="ph ph-info"></i>
-                    Learn More
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section class="contact section section--large" id="contact">
-        <div class="container contact__container">
-            <div class="contact__info fade-in-up">
-                <p class="label contact__label">Get in Touch</p>
-                <h2 class="heading-1 contact__title">Let's discuss your AI journey</h2>
-                <p class="contact__desc">Book a free consultation to explore how SimplyAI.work can streamline your operations and accelerate your growth.</p>
-                
-                <div class="contact__methods">
-                    <div class="contact-method">
-                        <div class="contact-method__icon">
-                            <i class="ph ph-envelope"></i>
-                        </div>
-                        <div>
-                            <div class="contact-method__label">Email</div>
-                            <div class="contact-method__value">hello@simplyai.work</div>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="contact-method__icon">
-                            <i class="ph ph-whatsapp-logo"></i>
-                        </div>
-                        <div>
-                            <div class="contact-method__label">WhatsApp</div>
-                            <div class="contact-method__value">+852 XXXX XXXX</div>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="contact-method__icon">
-                            <i class="ph ph-map-pin"></i>
-                        </div>
-                        <div>
-                            <div class="contact-method__label">Location</div>
-                            <div class="contact-method__value">Hong Kong</div>
-                        </div>
-                    </div>
+                <div class="tier tier--feat">
+                    <div class="tier__name">Growth</div>
+                    <div class="tier__price">HK$15,800</div>
+                    <div class="tier__unit">per month · three-month minimum</div>
+                    <ul>
+                        <li><i class="ph ph-check"></i> The audit, renewed monthly</li>
+                        <li><i class="ph ph-check"></i> Source, directory &amp; entity remediation</li>
+                        <li><i class="ph ph-check"></i> Error correction, evidenced</li>
+                        <li><i class="ph ph-check"></i> One bilingual optimised piece / month</li>
+                        <li><i class="ph ph-check"></i> Monthly share-of-voice report</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--primary">Enquire</a>
+                </div>
+                <div class="tier">
+                    <div class="tier__name">Pro</div>
+                    <div class="tier__price">Bespoke</div>
+                    <div class="tier__unit">chains &amp; multi-partner · priced by consultation</div>
+                    <ul>
+                        <li><i class="ph ph-check"></i> Everything in Growth</li>
+                        <li><i class="ph ph-check"></i> Multi-location / multi-partner coverage</li>
+                        <li><i class="ph ph-check"></i> Live tracking dashboard</li>
+                        <li><i class="ph ph-check"></i> Priority monitoring &amp; alerts</li>
+                        <li><i class="ph ph-check"></i> Quarterly competitive briefing</li>
+                    </ul>
+                    <a href="#contact" class="btn btn--ghost">Speak with us</a>
                 </div>
             </div>
-            
-            <div class="contact__form-wrapper fade-in-up">
-                <form id="contactForm" class="contact__form">
-                    <div class="form__group">
-                        <label class="form__label" for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required>
-                    </div>
-                    
-                    <div class="form__group">
-                        <label class="form__label" for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
-                    </div>
-                    
-                    <div class="form__group">
-                        <label class="form__label" for="phone">Phone / WhatsApp</label>
-                        <input type="tel" id="phone" name="phone" class="form__input" placeholder="+852 XXXX XXXX">
-                    </div>
-                    
-                    <div class="form__group">
-                        <label class="form__label" for="interest">I'm interested in...</label>
-                        <select id="interest" name="interest" class="form__select">
-                            <option value="">Select an option</option>
-                            <option value="sales-automation">Sales Inquiry Automation</option>
-                            <option value="content-generation">Content Generation</option>
-                            <option value="workflow-automation">Workflow Automation</option>
-                            <option value="full-platform">Full Platform Demo</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form__group">
-                        <label class="form__label" for="message">Message</label>
-                        <textarea id="message" name="message" class="form__textarea" placeholder="Tell us about your business and what you're looking to achieve..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn--primary form__submit">
-                        <i class="ph ph-paper-plane-tilt"></i>
-                        Send Message
-                    </button>
-                </form>
+            <p class="pricing__note">Engagements are limited to protect the quality and discretion of each. <span class="serif-em">A fixed-fee audit is the natural first step.</span></p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="wrap">
+            <div class="head"><span class="kicker">Considerations</span><h2 class="h2">Questions principals ask.</h2></div>
+            <div class="faq__list">
+                <div class="qa"><button class="qa__q">Is this simply SEO under another name? <i class="ph ph-plus"></i></button><div class="qa__a"><p>No. SEO concerns your position in a list of links. This concerns whether you are named and recommended inside the AI's answer — a different set of sources, signals, and remedies. The two are complementary; sound work here typically strengthens your search presence as well.</p></div></div>
+                <div class="qa"><button class="qa__q">Can you guarantee we become the top recommendation? <i class="ph ph-plus"></i></button><div class="qa__a"><p>No — and we would be wary of anyone who did. These systems are probabilistic and change without notice. We guarantee the method, the effort, and candid monthly reporting, and we will tell you plainly if it is not working.</p></div></div>
+                <div class="qa"><button class="qa__q">Is this compatible with our advertising and conduct rules? <i class="ph ph-plus"></i></button><div class="qa__a"><p>Yes — it is central to how we work. The majority of the work is ensuring accurate information about your practice is present in the places AI consults. We make no prohibited claims, and where AI attributes a non-compliant statement to you, we treat that as something to correct.</p></div></div>
+                <div class="qa"><button class="qa__q">How is success measured? <i class="ph ph-plus"></i></button><div class="qa__a"><p>By the share of AI recommendations you hold for the questions your prospects ask — before and after, with screenshots. We are candid that an AI mention is not a tracked click; what we demonstrate is errors corrected and measurable movement from absent to recommended.</p></div></div>
+                <div class="qa"><button class="qa__q">Do you work in Chinese? <i class="ph ph-plus"></i></button><div class="qa__a"><p>Every audit is run in both English and Chinese. AI frequently recommends different practices depending on the language of the question — that gap is often among the most valuable findings.</p></div></div>
             </div>
         </div>
     </section>
-    
-    <!-- Footer -->
+
+    <!-- CTA -->
+    <section class="section cta" id="contact">
+        <div class="wrap">
+            <h2 class="h2">See what AI says about your practice — in twenty minutes.</h2>
+            <p class="cta__sub">We will run the questions your prospects ask, live, and show you exactly where you stand. Nothing to prepare.</p>
+            <div class="cta__row">
+                <a href="mailto:hello@simplyai.work?subject=AI%20Visibility%20Walkthrough" class="btn btn--primary btn--lg">Request a walkthrough</a>
+                <a href="#pricing" class="btn btn--ghost btn--lg">View engagements</a>
+            </div>
+            <p class="cta__fine">By appointment · <a href="mailto:hello@simplyai.work">hello@simplyai.work</a> · Be the brand AI cites.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
+        <div class="wrap">
             <div class="footer__top">
-                <div class="footer__brand">
-                    <a href="#" class="footer__logo">
-                        <div class="footer__logo-placeholder">S</div>
-                        SimplyAI.work
-                    </a>
-                    <p class="footer__tagline">AI-powered business operations for the modern entrepreneur. Drive smarter, lead better.</p>
-                    <div class="footer__social">
-                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
-                            <i class="ph ph-linkedin-logo"></i>
-                        </a>
-                        <a href="#" class="footer__social-link" aria-label="Twitter">
-                            <i class="ph ph-twitter-logo"></i>
-                        </a>
-                        <a href="#" class="footer__social-link" aria-label="Instagram">
-                            <i class="ph ph-instagram-logo"></i>
-                        </a>
-                        <a href="#" class="footer__social-link" aria-label="YouTube">
-                            <i class="ph ph-youtube-logo"></i>
-                        </a>
+                <div>
+                    <div class="footer__logo"><span class="logo__mark">S</span> SimplyAI</div>
+                    <p class="footer__tag">AI search visibility for aesthetic clinics, law firms, and consultancies. Hong Kong &amp; Asia-Pacific. <span class="zh">成為 AI 引用的品牌。</span></p>
+                </div>
+                <div>
+                    <div class="footer__ct">Practice</div>
+                    <div class="footer__links">
+                        <a href="#method">Method</a>
+                        <a href="#standards">Standards</a>
+                        <a href="#pricing">Engagements</a>
+                        <a href="#faq">FAQ</a>
                     </div>
                 </div>
-                
-                <div class="footer__column">
-                    <h4 class="footer__column-title">Product</h4>
-                    <ul class="footer__links">
-                        <li><a href="#features" class="footer__link">Features</a></li>
-                        <li><a href="#workflows" class="footer__link">Workflows</a></li>
-                        <li><a href="#dashboard" class="footer__link">Dashboard</a></li>
-                        <li><a href="#" class="footer__link">Pricing</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__column">
-                    <h4 class="footer__column-title">Company</h4>
-                    <ul class="footer__links">
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#" class="footer__link">Blog</a></li>
-                        <li><a href="#" class="footer__link">Careers</a></li>
-                        <li><a href="#contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__column">
-                    <h4 class="footer__column-title">Support</h4>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Help Center</a></li>
-                        <li><a href="#" class="footer__link">Documentation</a></li>
-                        <li><a href="#" class="footer__link">API Reference</a></li>
-                        <li><a href="#" class="footer__link">Status</a></li>
-                    </ul>
+                <div>
+                    <div class="footer__ct">SimplyAI</div>
+                    <div class="footer__links">
+                        <a href="/bossai/">BossAI Copilot</a>
+                        <a href="mailto:hello@simplyai.work">Contact</a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="footer__bottom">
-                <p class="footer__copy">© 2025 SimplyAI.work. All rights reserved.</p>
-                <div class="footer__legal">
-                    <a href="#" class="footer__legal-link">Privacy Policy</a>
-                    <a href="#" class="footer__legal-link">Terms of Service</a>
-                    <a href="#" class="footer__legal-link">Cookie Policy</a>
-                </div>
+            <div class="footer__legal">
+                <p>© 2026 SimplyAI.work · Operated by [Registered Company Name] · BR [00000000] · Hong Kong</p>
+                <p>Be the brand AI cites.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Mobile Sticky CTA -->
-    <div class="mobile-cta">
-        <a href="#contact" class="btn btn--primary mobile-cta__btn">
-            <i class="ph ph-calendar-check"></i>
-            Book a Consultation
-        </a>
-    </div>
-    
-    <!-- Chatbot Floating Button -->
-    <button class="chatbot-trigger" id="chatbotTrigger" aria-label="Open AI Assistant">
-        <i class="ph ph-chat-circle-dots"></i>
-        <span class="chatbot-trigger__badge"></span>
-    </button>
-    
-    <!-- Chatbot Window -->
-    <div class="chatbot" id="chatbot">
-        <div class="chatbot__header">
-            <div class="chatbot__header-info">
-                <div class="chatbot__avatar">
-                    <i class="ph ph-robot"></i>
-                </div>
-                <div>
-                    <div class="chatbot__name">Boss Copilot 老闆AI副手</div>
-                    <div class="chatbot__status">Online • Ready to help</div>
-                </div>
-            </div>
-            <button class="chatbot__close" id="chatbotClose" aria-label="Close chat">
-                <i class="ph ph-x"></i>
-            </button>
-        </div>
-        
-        <div class="chatbot__messages" id="chatMessages">
-            <div class="chat-message chat-message--bot">
-                Hi! I'm your AI assistant. How can I help you explore SimplyAI.work today?
-                <br><br>
-                你好！我係你嘅AI助手。有咩可以幫到你？
-            </div>
-        </div>
-        
-        <div class="chatbot__input-area">
-            <input type="text" class="chatbot__input" id="chatInput" placeholder="Type your message... 輸入訊息...">
-            <button class="chatbot__send" id="chatSend" aria-label="Send message">
-                <i class="ph ph-paper-plane-tilt"></i>
-            </button>
-        </div>
-    </div>
-    
+
     <script>
-        // ===== NAVIGATION =====
         const nav = document.getElementById('nav');
-        const mobileToggle = document.getElementById('mobileToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        // Scroll behavior for nav
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 50) {
-                nav.classList.add('nav--scrolled');
-            } else {
-                nav.classList.remove('nav--scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-        
-        // Mobile menu toggle
-        mobileToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('nav__menu--open');
-            const icon = mobileToggle.querySelector('i');
-            icon.classList.toggle('ph-list');
-            icon.classList.toggle('ph-x');
-        });
-        
-        // Close mobile menu on link click
-        document.querySelectorAll('.nav__link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('nav__menu--open');
-                const icon = mobileToggle.querySelector('i');
-                icon.classList.add('ph-list');
-                icon.classList.remove('ph-x');
-            });
-        });
-        
-        // ===== LANGUAGE SWITCHER =====
-        const langBtns = document.querySelectorAll('.lang-switch__btn');
-        langBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                langBtns.forEach(b => b.classList.remove('lang-switch__btn--active'));
-                btn.classList.add('lang-switch__btn--active');
-                // Add actual language switching logic here
-                console.log('Language switched to:', btn.dataset.lang);
-            });
-        });
-        
-        // ===== SCROLL ANIMATIONS =====
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-        
-        document.querySelectorAll('.fade-in-up').forEach(el => {
-            observer.observe(el);
-        });
-        
-        // ===== CHATBOT =====
-        const chatbotTrigger = document.getElementById('chatbotTrigger');
-        const chatbot = document.getElementById('chatbot');
-        const chatbotClose = document.getElementById('chatbotClose');
-        const chatInput = document.getElementById('chatInput');
-        const chatSend = document.getElementById('chatSend');
-        const chatMessages = document.getElementById('chatMessages');
-        
-        // Toggle chatbot
-        chatbotTrigger.addEventListener('click', () => {
-            chatbot.classList.toggle('chatbot--open');
-            if (chatbot.classList.contains('chatbot--open')) {
-                chatInput.focus();
-            }
-        });
-        
-        chatbotClose.addEventListener('click', () => {
-            chatbot.classList.remove('chatbot--open');
-        });
-        
-        // Add message to chat
-        function addMessage(content, isUser = false) {
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `chat-message chat-message--${isUser ? 'user' : 'bot'}`;
-            messageDiv.textContent = content;
-            chatMessages.appendChild(messageDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-        
-        // Show typing indicator
-        function showTyping() {
-            const typingDiv = document.createElement('div');
-            typingDiv.className = 'chat-message chat-message--bot chat-message--typing';
-            typingDiv.id = 'typingIndicator';
-            typingDiv.innerHTML = `
-                <span class="typing-dot"></span>
-                <span class="typing-dot"></span>
-                <span class="typing-dot"></span>
-            `;
-            chatMessages.appendChild(typingDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-        
-        // Remove typing indicator
-        function hideTyping() {
-            const typing = document.getElementById('typingIndicator');
-            if (typing) typing.remove();
-        }
-        
-// Send message to Dify API via Cloudflare Worker
-async function sendToDify(message) {
-    const API_ENDPOINT = 'https://backend.simplyai.work/boss-ai';
-    
-    try {
-        showTyping();
-        chatSend.disabled = true;
-        
-        const response = await fetch(API_ENDPOINT, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                query: message,
-                user: getUserId(),
-                conversation_id: getConversationId()
-            })
-        });
-        
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        hideTyping();
-        
-        // Store conversation ID for context
-        if (data.conversation_id) {
-            sessionStorage.setItem('conversation_id', data.conversation_id);
-        }
-        
-        addMessage(data.answer || 'I apologize, but I encountered an issue. Please try again.', false);
-        
-    } catch (error) {
-        console.error('Chat API Error:', error);
-        hideTyping();
-        addMessage('Sorry, I\'m having trouble connecting right now. Please try again or reach out to us via WhatsApp.\n\n抱歉，連接出現問題。請稍後再試或透過WhatsApp聯繫我們。', false);
-    } finally {
-        chatSend.disabled = false;
-    }
-}
-
-// Helper functions for user tracking
-function getUserId() {
-    let userId = localStorage.getItem('chat_user_id');
-    if (!userId) {
-        userId = 'web-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
-        localStorage.setItem('chat_user_id', userId);
-    }
-    return userId;
-}
-
-function getConversationId() {
-    return sessionStorage.getItem('conversation_id') || '';
-}
-        
-        // Handle send
-        function handleSend() {
-            const message = chatInput.value.trim();
-            if (!message) return;
-            
-            addMessage(message, true);
-            chatInput.value = '';
-            sendToDify(message);
-        }
-        
-        chatSend.addEventListener('click', handleSend);
-        chatInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                handleSend();
-            }
-        });
-        
-        // ===== CONTACT FORM =====
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-            
-            // Placeholder: Replace with actual form submission endpoint
-            console.log('Form submitted:', data);
-            
-            // Show success message (replace with actual submission logic)
-            alert('Thank you for your message! We\'ll be in touch soon.\n\n感謝您的訊息！我們會盡快與您聯繫。');
-            contactForm.reset();
-        });
-        
-        // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offset = nav.offsetHeight + 20;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // ===== HERO CHART ANIMATION =====
-        function animateChartBars() {
-            const bars = document.querySelectorAll('.chart-bar');
-            bars.forEach(bar => {
-                const originalHeight = bar.style.height;
-                const randomHeight = Math.random() * 50 + 30;
-                bar.style.height = randomHeight + '%';
-                
-                setTimeout(() => {
-                    bar.style.height = originalHeight;
-                }, 2000);
-            });
-        }
-        
-        setInterval(animateChartBars, 4000);
+        addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', scrollY > 8));
+        const burger = document.getElementById('burger'), menu = document.getElementById('menu');
+        burger.addEventListener('click', () => menu.classList.toggle('menu--open'));
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('menu--open')));
+        document.querySelectorAll('.qa__q').forEach(q => q.addEventListener('click', () => q.parentElement.classList.toggle('qa--open')));
     </script>
 </body>
 </html>
