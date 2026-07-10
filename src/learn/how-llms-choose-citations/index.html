@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How LLMs Choose What to Cite | SimplyAI</title>
+    <meta name="description" content="What published research on retrieval-augmented generation and citation behaviour shows about why AI assistants cite the sources they do — and what it implies for how a business should structure its information.">
+    <link rel="canonical" href="https://simplyai.work/learn/how-llms-choose-citations/">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&family=DM+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/learn.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How LLMs Choose What to Cite",
+      "description": "What published research on retrieval-augmented generation shows about citation behaviour in AI assistants.",
+      "author": { "@type": "Organization", "name": "SimplyAI", "url": "https://simplyai.work/" },
+      "publisher": { "@type": "Organization", "name": "SimplyAI", "url": "https://simplyai.work/" },
+      "mainEntityOfPage": "https://simplyai.work/learn/how-llms-choose-citations/",
+      "datePublished": "2026-07-09",
+      "dateModified": "2026-07-09"
+    }
+    </script>
+</head>
+<body>
+    <nav class="nav"><div class="nav__in">
+        <a href="/" class="logo"><span class="logo__mark">S</span> SimplyAI</a>
+        <div class="menu__links">
+            <a href="/learn/" class="menu__link">Learn</a>
+            <a href="/#pricing" class="menu__link">Engagements</a>
+            <a href="/#contact" class="btn">Request an audit</a>
+        </div>
+    </div></nav>
+
+    <header class="article-header"><div class="article-wrap">
+        <span class="kicker">Research</span>
+        <h1 class="h1">How LLMs Choose What to Cite</h1>
+        <p class="dek">What the published research shows, and what it implies for how a practice should structure its information.</p>
+        <div class="article-meta"><span>SimplyAI</span><span>Updated 9 July 2026</span></div>
+    </div></header>
+
+    <article class="article-body"><div class="article-wrap">
+        <div class="tldr">
+            <span class="tldr__label">TL;DR</span>
+            <p>Most consumer AI assistants answer using <strong>retrieval-augmented generation</strong>: a search or retrieval step finds candidate sources, and the model then writes an answer grounded in what it retrieved, citing some subset of those sources. Retrieval favours content that is specific, well-structured, and independently corroborated across multiple sources — not content that merely claims authority about itself.</p>
+        </div>
+
+        <h2 class="h2">The two-step process behind a generated answer</h2>
+        <p>When ChatGPT, Gemini, or Perplexity answers a question with live information, it is typically not recalling something memorised during training. It runs a retrieval step — a web search or a lookup against an index — pulls a set of candidate documents, and then generates a response grounded in that retrieved content, a pattern known in the research literature as retrieval-augmented generation, or RAG (Lewis et al., 2020).<sup>1</sup> The documents retrieved shape which facts and which names appear in the final answer; the generation step then decides how to phrase and which of the retrieved sources to cite.</p>
+
+        <h2 class="h2">What retrieval tends to favour</h2>
+        <ul>
+            <li><strong>Specificity over breadth.</strong> A page that directly and concisely answers "what does X cost" or "where is X located" retrieves more reliably than a page that only mentions the fact in passing.</li>
+            <li><strong>Structure.</strong> Content organised into clear headings, lists, and tables — the same structure search engines have long favoured — is easier for a retrieval system to extract and quote accurately.</li>
+            <li><strong>Independent corroboration.</strong> A fact repeated across a business's own site, a directory listing, and a review platform is retrieved with more apparent confidence than a claim appearing only on the business's own page. Foundational GEO research similarly finds that citing statistics and quotations measurably increases a source's visibility within generated answers (Aggarwal et al., 2023).<sup>2</sup></li>
+            <li><strong>Freshness, for time-sensitive queries.</strong> Prices, hours, and availability are the categories most likely to be stale in an AI's answer if a business's public information hasn't been updated to match reality.</li>
+        </ul>
+
+        <h2 class="h2">Why third-party sources carry outsized weight</h2>
+        <p>A business's own website is, from a retrieval system's perspective, an interested party — it has an obvious incentive to describe itself favourably. A directory listing, a review platform, or independent press coverage does not carry the same incentive, which is part of why these sources are disproportionately present in the citation lists AI assistants actually return. In our own <a href="/learn/state-of-ai-search-hong-kong/">landscape study of Hong Kong clinics and law firms</a>, directory and listing sites accounted for a large share of citations — more, in aggregate, than most individual business websites.</p>
+
+        <h2 class="h2">The practical implication</h2>
+        <p>None of this is exploitable through any single trick. It implies a specific, unglamorous set of priorities: keep factual information (price, location, services) accurate and consistent everywhere it appears; ensure the business is present and correctly listed on the directories relevant to its category and language; and structure owned content so that a retrieval system can extract a clean, specific answer rather than requiring it to infer one from marketing prose.</p>
+    </div></article>
+
+    <section class="sources"><div class="article-wrap">
+        <h2 class="h2">Sources</h2>
+        <ol>
+            <li>Lewis, P. et al. (2020). <em>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.</em> arXiv:2005.11401. <a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener">arxiv.org/abs/2005.11401</a></li>
+            <li>Aggarwal, P. et al. (2023). <em>GEO: Generative Engine Optimization.</em> arXiv:2311.09735. <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">arxiv.org/abs/2311.09735</a></li>
+            <li>Google Search Central. <em>How Search retrieves and ranks content.</em> <a href="https://developers.google.com/search/docs/fundamentals/how-search-works" target="_blank" rel="noopener">developers.google.com</a></li>
+        </ol>
+    </div></section>
+
+    <section class="article-cta"><div class="wrap">
+        <h2 class="h2">See which sources AI cites about you — today.</h2>
+        <p>A twenty-minute walkthrough, live, showing your actual citation neighbourhood.</p>
+        <a href="/#contact" class="btn">Request a walkthrough</a>
+    </div></section>
+
+    <footer class="footer"><div class="wrap">
+        <p>© 2026 SimplyAI.work · <a href="/">simplyai.work</a> · <a href="mailto:hello@simplyai.work">hello@simplyai.work</a></p>
+    </div></footer>
+</body>
+</html>
