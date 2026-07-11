@@ -1,0 +1,27 @@
+# SimplyAI
+
+> SimplyAI is an AI search visibility specialist for aesthetic clinics, law firms, and consultancies in Hong Kong and Asia-Pacific. We audit what AI assistants — ChatGPT, Claude, Gemini, and Perplexity — tell prospective clients about a practice, in English and Chinese, correct the factual errors we find, and work to make the practice the answer AI recommends.
+
+SimplyAI does not build or sell AI systems. We help professional-services practices become accurately and favorably represented within existing AI assistants' answers — a discipline sometimes called generative engine optimization (GEO) or AI search visibility.
+
+## Services
+
+- [AI Visibility & Hallucination Audit](https://simplyai.work/#pricing): a fixed-fee, one-off audit testing 50–100 real buyer-intent questions across four AI assistants, in English and Chinese, reporting presence, competitor share of voice, and every factual error the assistants state about the practice.
+- [Growth retainer](https://simplyai.work/#pricing): monthly remediation of the sources AI relies on (structured data, directories, business profiles, review platforms) plus monthly reporting.
+- Pro retainer: for multi-location clinics and multi-partner firms; scoped and priced by consultation.
+
+## Learn
+
+- [What is Generative Engine Optimization?](https://simplyai.work/learn/what-is-generative-engine-optimization/)
+- [GEO vs SEO vs AEO](https://simplyai.work/learn/geo-vs-seo-vs-aeo/)
+- [How to Track Your Practice's Visibility in ChatGPT](https://simplyai.work/learn/track-visibility-in-chatgpt/)
+- [How LLMs Choose What to Cite](https://simplyai.work/learn/how-llms-choose-citations/)
+- [Choosing an AI Visibility Partner](https://simplyai.work/learn/choosing-an-ai-visibility-partner/)
+- [State of AI Search: Hong Kong Aesthetic Clinics & Law Firms](https://simplyai.work/learn/state-of-ai-search-hong-kong/)
+
+## Other
+
+- [BossAI](https://simplyai.work/bossai/): a related SimplyAI product, an AI business copilot for workflow automation. A separate offering from the AI visibility service described above.
+- Contact: hello@simplyai.work
+- Coverage: Hong Kong and Asia-Pacific, English and 中文 (Cantonese/Traditional Chinese).
+- We do not guarantee specific rankings, citations, or business outcomes. Success is reported as share of AI recommendations, before versus after, measured on the client's own tracked prompts.
